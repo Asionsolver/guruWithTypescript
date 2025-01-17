@@ -1,0 +1,19 @@
+{
+  "name": "guruwithtypescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  }
+}
