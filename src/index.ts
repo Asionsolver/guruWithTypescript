@@ -4,4 +4,5 @@
 // import "./typeInference";
 // import "./typeAlias";
 // import "./union";
-import "./interSection";
+// import "./interSection";
+import "./generic";
