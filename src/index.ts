@@ -2,4 +2,6 @@
 // import "./object";
 // import "./functions";
 // import "./typeInference";
-import "./typeAlias";
+// import "./typeAlias";
+// import "./union";
+import "./interSection";
