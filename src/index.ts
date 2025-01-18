@@ -5,4 +5,6 @@
 // import "./typeAlias";
 // import "./union";
 // import "./interSection";
-import "./generic";
+// import "./generic";
+import "./transform";
+// import "./record";
