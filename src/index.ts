@@ -1,4 +1,5 @@
 // import "./array";
 // import "./object";
 // import "./functions";
-import "./typeInference";
+// import "./typeInference";
+import "./typeAlias";
