@@ -8,7 +8,7 @@ function processUserData(users, filterCriteria, fieldsToAggregate) {
 
   // Step 2: Aggregate specified fields
   const aggregatedData = fieldsToAggregate.reduce((acc, field) => {
-    console.log("Acc", acc);
+    // console.log("Acc", acc);
 
     acc[field] = filteredUsers.reduce((sum, user) => sum + user[field], 0); // Potential issues here
     return acc;

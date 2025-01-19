@@ -6,5 +6,8 @@
 // import "./union";
 // import "./interSection";
 // import "./generic";
-import "./transform";
+// import "./transform";
 // import "./record";
+// import "./any";
+// import "./unknown";
+import "./typeGuard";

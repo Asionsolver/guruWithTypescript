@@ -42,13 +42,11 @@ function processUserData(
     return acc;
   }, {} as Record<FieldsToAggregate, number>);
 
-  const transformedData = filteredUsers.map((user) => {
-    return {
-      id: user.id,
-      fullName: `${user.firstName} ${user.lastName ?? ""}`.trim(),
-      ...aggregatedData,
-    };
-  });
+  const transformedData = filteredUsers.map((user) => ({
+    id: user.id,
+    fullName: `${user.firstName} ${user.lastName ?? ""}`.trim(),
+    ...aggregatedData,
+  }));
 
   return transformedData;
 }
@@ -59,4 +57,4 @@ const users = [
 ];
 
 // console.log(processUserData(users));
-// console.log(processUserData(users, {}, ["age", "score"]));
+console.log(processUserData(users, { age: 25 }, ["age", "score"]));
