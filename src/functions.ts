@@ -97,5 +97,14 @@ function findById(id: number): {
   return users;
 }
 
-console.log(findById(1));
+// console.log(findById(1));
 // console.log(findById(6));
+function myCallback(text: string): void {
+  console.log(`myCallback called with ${text}`);
+}
+function withCallbackArg(message: string, callbackFn: (text: string) => void) {
+  console.log(`withCallback called, message : ${message}`);
+  callbackFn(`${message} from withCallback"`);
+}
+
+withCallbackArg("hello", myCallback);
