@@ -30,3 +30,27 @@ function greetUser(name: string | null) {
 
 greetUser("Ashis"); // Output: Hello, Ashis!
 greetUser(null); // Output: Hello, Guest!
+
+type Address = {
+  city: string;
+  road:string;
+  parmanentAddress?: string;
+  presentAddress: string;
+}
+type User = {
+  name: string;
+  address: Address;
+}
+
+const userOne:User = {
+  name: "ashis",
+  address:{
+    city: "Rajshahi",
+    road: "345 Baliaghatta",
+    presentAddress: "Jessore"
+  }
+}
+
+
+const permanentAddress = userOne?.address?.parmanentAddress ?? "No Parmanent Address Add";
+console.log({permanentAddress}); // output: { parmanentAddress: "No Parmanent Address Add"}
