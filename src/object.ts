@@ -38,3 +38,19 @@ function printObject(obj: Object) {
 }
 
 printObject(obj);
+
+
+type EmployeeInfo = {
+  name: string;
+  age: number;
+  designation: string;
+  companyName: "Stack Learner" // type --> Literal Typea
+}
+
+const emmployeOne: EmployeeInfo ={
+  name: "HM Nayem",
+  age: 32,
+  designation:"Full Stact Developer",
+  // companyName: "Stack Learner Bangladesh" // error: Type '"Stack Learner Bangladesh"' is not assignable to type '"Stack Learner"'.
+  companyName: "Stack Learner"
+}
