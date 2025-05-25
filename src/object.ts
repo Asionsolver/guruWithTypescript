@@ -40,17 +40,47 @@ function printObject(obj: Object) {
 printObject(obj);
 
 
-type EmployeeInfo = {
+type FullStackEmployeeInfo = {
   name: string;
   age: number;
   designation: string;
   companyName: "Stack Learner" // type --> Literal Typea
 }
 
-const emmployeOne: EmployeeInfo ={
+const fullStackEmployeOne: FullStackEmployeeInfo ={
   name: "HM Nayem",
   age: 32,
   designation:"Full Stact Developer",
   // companyName: "Stack Learner Bangladesh" // error: Type '"Stack Learner Bangladesh"' is not assignable to type '"Stack Learner"'.
   companyName: "Stack Learner"
 }
+
+type FrontendEmployeeInfo = {
+  name: string;
+  age: number;
+  designation: string;
+  readonly companyName:string // using access modifiers
+}
+
+const FrontendEmployeOne: FrontendEmployeeInfo ={
+  name: "HM Nayem",
+  age: 32,
+  designation:"Full Stact Developer",
+  // companyName: "Stack Learner Bangladesh" // error: Type '"Stack Learner Bangladesh"' is not assignable to type '"Stack Learner"'.
+  companyName: "Stack Learner"
+}
+
+// FrontendEmployeOne.companyName = "Stack" // error: Cannot assign to 'companyName' because it is a read-only property.
+
+console.log(FrontendEmployeOne)
+
+
+const FrontendEmployeTwo: FrontendEmployeeInfo ={
+  name: "HM Nayem",
+  age: 32,
+  designation:"Full Stact Developer",
+  // companyName: "Stack Learner Bangladesh" // error: Type '"Stack Learner Bangladesh"' is not assignable to type '"Stack Learner"'.
+  companyName: "Stack"
+}
+
+// FrontendEmployeOne.companyName = "Stack Learner Bangladesh" // error: Cannot assign to 'companyName' because it is a read-only property.
